@@ -704,15 +704,8 @@ header, .marketPrice {
         padding-left: 20px;
     }
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-    font-family: 'Poppins';
-    
-} 
 
-section{
+.platform {
     background: #FFF6FB;
     width: 100%;
 }
@@ -727,7 +720,7 @@ section{
    
 }
 .text h2{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 32px;
@@ -740,7 +733,7 @@ padding-bottom: 40px;
     
 }
 .h3{
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 24px;
@@ -752,7 +745,7 @@ text-align: center;
    
 }
 .p1{
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
