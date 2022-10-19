@@ -704,3 +704,299 @@ header, .marketPrice {
         padding-left: 20px;
     }
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins';
+    
+} 
+
+section{
+    background: #FFF6FB;
+    width: 100%;
+}
+.box1{
+   padding: 100px 50px;
+    max-width: 100%;
+    
+}
+.text{
+    text-align: center;
+    padding-bottom: 20px;
+   
+}
+.text h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+
+color: #171717;
+padding-bottom: 40px;
+}
+.img-con{
+    padding-bottom: 20px;
+    
+}
+.h3{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+color: #000000;
+line-height: 14px;
+align-items: center;
+text-align: center;
+
+   
+}
+.p1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #000000;
+    line-height: 35px;
+    list-style: none;
+    text-align: left;
+    justify-content: space-between;
+    padding: 10px 0px;
+   
+}
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+}
+.trade{
+    
+   
+    text-align: left;
+    
+
+    
+}
+
+
+.box2{
+    background: #1b004e;
+  
+ 
+     padding: 50px 0px; 
+    
+    height: 575.38px;
+  
+}
+.box-content{
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.text2{
+    max-width: 29ch;
+   padding-top: 100px;
+    color: #fff;
+}
+.img-box2{
+    display: flex;
+    padding-left: 140px;
+    gap: 20px;
+    
+   
+    
+}
+.google{
+    width: 15%;
+}
+.appstore{
+    width: 15%;
+}
+.p2{
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+}
+.img-box{
+    width: 50%;
+    position: relative;
+}
+.shape{
+    position: absolute;
+    top: 15px;
+    left: 350px;  
+}
+.app{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.box3{
+    background: #FFF6FB;
+    padding-top: 50px; 
+   
+    
+}
+
+.box-content2{
+    width: 100%;
+    padding: 100px 100px;
+    display: flex;
+    gap: 33px;
+
+    justify-content: space-around;
+   
+
+}
+.box3 .head3{
+    text-align: center;
+    padding: 50px 0px;
+}
+.sub{
+    
+    box-shadow: 0px 4px 8px rgba(203, 203, 203, 0.25);
+    border-radius: 10px;
+    
+    
+   
+}
+.sub-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.sub-sec{
+   
+   
+    padding: 20px;
+    margin: auto;
+    
+}
+.sub-con{
+   display: flex;
+ 
+   
+   justify-content: space-between;
+   gap: 30px;
+   
+}
+.sub-con > p, span {
+    font-size: 11px;
+    letter-spacing: 0.03em;
+    
+}
+.sub-sec h5{
+    padding: 4.55px 0px;
+    font-size: 16px;
+    margin-bottom: 13px;
+}
+.sub-sec > p{
+    color: #4F4F4F;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+.sub-sec-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    *{ 
+        border: 1px solid red;
+   
+    } 
+    .container {
+     flex-direction: column;
+    
+    }
+    .box1{
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .box-content{
+         flex-direction: column;
+    }
+    .trade{
+        width: 100%;
+        text-align: center;
+       
+    }
+    .p1{
+        text-align: center;
+    }
+    
+    .box2{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .shape{
+        display: none;
+    }
+    .app{
+        position: relative;
+        width: 260px;
+        height: 250px;
+        margin: auto;
+        padding-bottom: 20px;
+        padding-left: 50px;
+    }
+    .box-content2{
+        flex-direction: column;
+        padding: 16px;
+    } 
+    .box3{
+        height: auto;
+    } 
+    .sub{
+        width: 100%;
+        
+        margin-bottom: 30px;
+    }  
+    .sub-sec{
+        
+    }
+    .sub-con > p, span {
+        font-size: 9px;
+        letter-spacing: 0.03em;
+    }
+    .text{
+      
+        text-align: center;
+    }
+    .text2{
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    
+    .img-box2{
+       display: flex;
+       padding: 0;
+       width: 100%;
+       align-self: center;
+       justify-content: center;
+       gap: 20px;
+       
+    }
+    .google, .appstore{
+        width: 30%;
+    }
+} 
