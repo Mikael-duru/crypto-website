@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael C. Duru - durumikaelc@gmail.com | Gladys Luke - lukegladys615@gmail.com | Opeyemi Adeleye - adebola786@gmail.com">
+    <title>Cryptous</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.svg" type="image/x-icon">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="wavy-bg">
+      <div class="wrapper">
+        <div class="navbar">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="">
+            Cryptous
+          </div>
+
+          <!-- Menu Toggle using CSS label, input:checkbox, pseudo class (:checked) and descendent selectors -->
+          <input type="checkbox" id="showMenu">
+          <nav class="nav">
+            <div class="nav__flex">
+              <ul class="nav__menu">
+                <li class="nav__item"><a href="#" class="nav__link">home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">company</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">about</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">pricing</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">team</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">contact</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">blog</a></li>
+              </ul>
+              <button class="nav__btn">trade now</button>
+            </div>
+          </nav>
+
+          <label id="openMenu" for="showMenu"><img src="./images/menu.png" alt=""></label>
+          <label id="closeMenu" for="showMenu"><i class="fa fa-close"></i></label>
+        </div>
+
+        <section class="hero">
+          <div class="hero__flex">
+            <div class="hero__content">
+              <h1 class="hero__title">Make better business with Cryptocurrency</h1>
+              <p class="hero__desc">We offers users a fully operational long-term rental platform. It plans to leverages blockchain technology.</p>
+              <button class="hero__btn">Get Whitelisted</button>
+            </div>
+            <div class="hero__illustration">
+              <img src="./images/illustration.png" alt="" class="hero__image">
+              <img src="./images/illustration-frame.png" alt="" class="hero__image-2">
+              <img src="./images/illustration-ribbon.png" alt="" class="wrapper__ribbon">
+            </div>
+          </div>
+
+          <img src="./images/scrool.svg" alt="" class="scrool">
+        </section>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1B004E" fill-opacity="1" d="M0,224L80,213.3C160,203,320,181,480,197.3C640,213,800,267,960,272C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1B004E" fill-opacity="1" d="M0,128L48,133.3C96,139,192,149,288,160C384,171,480,181,576,181.3C672,181,768,171,864,154.7C960,139,1056,117,1152,117.3C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1B004E" fill-opacity="1" d="M0,128L80,154.7C160,181,320,235,480,229.3C640,224,800,160,960,138.7C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> -->
+  </header>
+
+  <main>
+    <section class="marketPrice">
+      <div class="wrapper">
+        <h2 class="marketPrice__title">Today's Cryptocurrency Prices</h2>
+      <table class="marketPrice__table">
+        <thead class="marketPrice__THead">
+          <tr class="marketPrice__tRow">
+            <th class="marketPrice__head sm-hide"># <img src="./images/white-arrow.svg" alt="" class="white-arrow"></th>
+            <th class="marketPrice__head">name</th>
+            <th class="marketPrice__head sm-hide">price</th>
+            <th class="marketPrice__head sm-hide">24h %</th>
+            <th class="marketPrice__head sm-hide">7d %</th>
+            <th class="marketPrice__head sm-hide">
+              <div class="flex">
+              market cap &nbsp;<img src="./images/info-icon.svg" alt="" class="info-icon">
+              </div>
+            </th>
+            <th class="marketPrice__head">volume(24h)</th>
+            <th class="marketPrice__head sm-hide">last 7 days</th>
+            <th class="sm-hide"></th>
+          </tr>
+        </thead>
+        <tbody class="marketPrice__TBody">
+          <tr class="marketPrice__bRow">
+            <td class="marketPrice__data sm-hide"><img src="./images/empty-star-icon.svg" alt="" class="star-icon"> 1</td>
+            <td class="marketPrice__data">
+              <div class="flex">
+                <img src="./images/bitcoin.svg" alt="" class="coin-logo"> bitcoin <sup class="coin-acronym">BTC</sup>
+              </div>
+            </td>
+            <td class="marketPrice__data sm-hide">$55,206.61</td>
+            <td class="marketPrice__data green sm-hide">
+              <div class="flex">
+                <img src="./images/angle-up-green.svg" alt="" class="arrow-icon"> 0.92%
+              </div>
+            </td>
+            <td class="marketPrice__data green sm-hide">
+              <div class="flex">
+                <img src="./images/angle-up-green.svg" alt="" class="arrow-icon"> 15.86%
+              </div>
+            </td>
+            <td class="marketPrice__data sm-hide">$1,046,899,935,348</td>
+            <td class="marketPrice__data">$1,046,899,935,348 <br> <span>653,452 BTC</span></td>
+            <td class="marketPrice__data sm-hide"><img src="./images/stock-line-green.svg" alt="" class="stockLine"> <img src="./images/table-dots.svg" alt="" class="marketPrice__dots"></td>
+          </tr>
+          <tr class="marketPrice__bRow">
+            <td class="marketPrice__data sm-hide"><img src="./images/empty-star-icon.svg" alt="" class="star-icon"> 2</td>
+            <td class="marketPrice__data">
+              <div class="flex">
+                <img src="./images/ethereum.svg" alt="" class="coin-logo"> ethereum <sup class="coin-acronym">ETH</sup>
+              </div>
+            </td>
+            <td class="marketPrice__data sm-hide">$55,206.61</td>
+            <td class="marketPrice__data red sm-hide">
+              <div class="flex">
+                <img src="./images/angle-up-red.svg" alt="" class="arrow-icon"> 0.92%
+              </div>
+            </td>
+            <td class="marketPrice__data green sm-hide">
+              <div class="flex">
+                <img src="./images/angle-up-green.svg" alt="" class="arrow-icon"> 15.86%
+              </div>
+            </td>
+            <td class="marketPrice__data sm-hide">$1,046,899,935,348</td>
+            <td class="marketPrice__data">$1,046,899,935,348 <br> <span>653,452 BTC</span></td>
+            <td class="marketPrice__data sm-hide"><img src="./images/stock-line-green.svg" alt="" class="stockLine"> <img src="./images/table-dots.svg" alt="" class="marketPrice__dots"></td>
+          </tr>
+          <tr class="marketPrice__bRow">
+            <td class="marketPrice__data sm-hide"><img src="./images/empty-star-icon.svg" alt="" class="star-icon"> 3</td>
+            <td class="marketPrice__data">
+              <div class="flex">
+                <img src="./images/cardano.svg" alt="" class="coin-logo"> cardano <sup class="coin-acronym">ADA</sup>
+              </div>
+            </td>
+            <td class="marketPrice__data sm-hide">$55,206.61</td>
+            <td class="marketPrice__data red sm-hide">
+              <div class="flex">
+                <img src="./images/angle-up-red.svg" alt="" class="arrow-icon"> 0.92%
+              </div>
+            </td>
+            <td class="marketPrice__data red sm-hide">
+              <div class="flex">
+                <img src="./images/angle-up-red.svg" alt="" class="arrow-icon"> 15.86%
+              </div>
+            </td>
+            <td class="marketPrice__data sm-hide">$1,046,899,935,348</td>
+            <td class="marketPrice__data">$1,046,899,935,348 <br> <span>653,452 BTC</span></td>
+            <td class="marketPrice__data sm-hide"><img src="./images/stock-line-red.svg" alt="" class="stockLine"> <img src="./images/table-dots.svg" alt="" class="marketPrice__dots"></td>
+          </tr>
+          <tr class="marketPrice__bRow">
+            <td class="marketPrice__data sm-hide"><img src="./images/empty-star-icon.svg" alt="" class="star-icon"> 4</td>
+            <td class="marketPrice__data">
+              <div class="flex">
+                <img src="./images/tether.svg" alt="" class="coin-logo"> tether <sup class="coin-acronym">USDT</sup>
+              </div>
+            </td>
+            <td class="marketPrice__data sm-hide">$55,206.61</td>
+            <td class="marketPrice__data green sm-hide">
+              <div class="flex">
+                <img src="./images/angle-up-green.svg" alt="" class="arrow-icon"> 0.92%
+              </div>
+            </td>
+            <td class="marketPrice__data green sm-hide">
+              <div class="flex">
+                <img src="./images/angle-up-green.svg" alt="" class="arrow-icon"> 15.86%
+              </div>
+            </td>
+            <td class="marketPrice__data sm-hide">$1,046,899,935,348</td>
+            <td class="marketPrice__data">$1,046,899,935,348 <br> <span>653,452 BTC</span></td>
+            <td class="marketPrice__data sm-hide"><img src="./images/stock-line-green.svg" alt="" class="stockLine"> <img src="./images/table-dots.svg" alt="" class="marketPrice__dots"></td>
+          </tr>
+          <tr class="marketPrice__bRow">
+            <td class="marketPrice__data sm-hide"><img src="./images/empty-star-icon.svg" alt="" class="star-icon"> 5</td>
+            <td class="marketPrice__data">
+              <div class="flex">
+                <img src="./images/avalanche.svg" alt="" class="coin-logo"> avalanche <sup class="coin-acronym">AVAX</sup>
+              </div>
+            </td>
+            <td class="marketPrice__data sm-hide">$55,206.61</td>
+            <td class="marketPrice__data red sm-hide">
+              <div class="flex">
+                <img src="./images/angle-up-red.svg" alt="" class="arrow-icon"> 0.92%
+              </div>
+            </td>
+            <td class="marketPrice__data red sm-hide">
+              <div class="flex">
+                <img src="./images/angle-up-red.svg" alt="" class="arrow-icon"> 15.86%
+              </div>
+            </td>
+            <td class="marketPrice__data sm-hide">$1,046,899,935,348</td>
+            <td class="marketPrice__data">$1,046,899,935,348 <br> <span>653,452 BTC</span></td>
+            <td class="marketPrice__data sm-hide"><img src="./images/stock-line-red.svg" alt="" class="stockLine"> <img src="./images/table-dots.svg" alt="" class="marketPrice__dots"></td>
+          </tr>
+          <tr class="marketPrice__bRow">
+            <td class="marketPrice__data sm-hide"><img src="./images/empty-star-icon.svg" alt="" class="star-icon">6</td>
+            <td class="marketPrice__data">
+              <div class="flex">
+                <img src="./images/algorand.svg" alt="" class="coin-logo"> algorand <sup class="coin-acronym">ALGO</sup>
+              </div>
+            </td>
+            <td class="marketPrice__data sm-hide">$55,206.61</td>
+            <td class="marketPrice__data green sm-hide">
+              <div class="flex">
+                <img src="./images/angle-up-green.svg" alt="" class="arrow-icon"> 0.92%
+              </div>
+            </td>
+            <td class="marketPrice__data green sm-hide">
+              <div class="flex">
+                <img src="./images/angle-up-green.svg" alt="" class="arrow-icon"> 15.86%
+              </div>
+            </td>
+            <td class="marketPrice__data sm-hide">$1,046,899,935,348</td>
+            <td class="marketPrice__data">$1,046,899,935,348 <br> <span>653,452 BTC</span></td>
+            <td class="marketPrice__data sm-hide"><img src="./images/stock-line-green.svg" alt="" class="stockLine"> <img src="./images/table-dots.svg" alt="" class="marketPrice__dots"></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
