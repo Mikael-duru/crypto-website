@@ -39,7 +39,7 @@
           </nav>
 
           <label id="openMenu" for="showMenu"><img src="./images/menu.png" alt=""></label>
-          <label id="closeMenu" for="showMenu"><i class="fa fa-close"></i></label>
+          <label id="closeMenu" for="showMenu"><i class="fa fa-close close-icon"></i></label>
         </div>
 
         <section class="hero">
@@ -51,7 +51,7 @@
             </div>
             <div class="hero__illustration">
               <img src="./images/illustration.png" alt="" class="hero__image">
-              <img src="./images/illustration-frame.png" alt="" class="hero__image-2">
+              <!-- <img src="./images/illustration-frame.png" alt="" class="hero__image-2"> -->
               <img src="./images/illustration-ribbon.png" alt="" class="wrapper__ribbon">
             </div>
           </div>
@@ -61,11 +61,11 @@
       </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1B004E" fill-opacity="1" d="M0,224L80,213.3C160,203,320,181,480,197.3C640,213,800,267,960,272C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1B004E" fill-opacity="1" d="M0,128L48,133.3C96,139,192,149,288,160C384,171,480,181,576,181.3C672,181,768,171,864,154.7C960,139,1056,117,1152,117.3C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1B004E" fill-opacity="1" d="M0,128L80,154.7C160,181,320,235,480,229.3C640,224,800,160,960,138.7C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> -->
   </header>
 
   <main>
+
+    <!-- Market Update Section -->
     <section class="marketPrice">
       <div class="wrapper">
         <h2 class="marketPrice__title">Today's Cryptocurrency Prices</h2>
@@ -77,7 +77,7 @@
             <th class="marketPrice__head sm-hide">price</th>
             <th class="marketPrice__head sm-hide">24h %</th>
             <th class="marketPrice__head sm-hide">7d %</th>
-            <th class="marketPrice__head sm-hide">
+            <th class="marketPrice__head sm-hide  sm-hide--active">
               <div class="flex">
               market cap &nbsp;<img src="./images/info-icon.svg" alt="" class="info-icon">
               </div>
@@ -106,9 +106,13 @@
                 <img src="./images/angle-up-green.svg" alt="" class="arrow-icon"> 15.86%
               </div>
             </td>
-            <td class="marketPrice__data sm-hide">$1,046,899,935,348</td>
+            <td class="marketPrice__data sm-hide sm-hide--active">$1,046,899,935,348</td>
             <td class="marketPrice__data">$1,046,899,935,348 <br> <span>653,452 BTC</span></td>
-            <td class="marketPrice__data sm-hide"><img src="./images/stock-line-green.svg" alt="" class="stockLine"> <img src="./images/table-dots.svg" alt="" class="marketPrice__dots"></td>
+            <td class="marketPrice__data sm-hide">
+              <div class="flex">
+                <img src="./images/stock-line-green.svg" alt="" class="stockLine"> <img src="./images/table-dots.svg" alt="" class="marketPrice__dots">
+              </div>
+            </td>
           </tr>
           <tr class="marketPrice__bRow">
             <td class="marketPrice__data sm-hide"><img src="./images/empty-star-icon.svg" alt="" class="star-icon"> 2</td>
@@ -128,7 +132,7 @@
                 <img src="./images/angle-up-green.svg" alt="" class="arrow-icon"> 15.86%
               </div>
             </td>
-            <td class="marketPrice__data sm-hide">$1,046,899,935,348</td>
+            <td class="marketPrice__data sm-hide sm-hide--active">$1,046,899,935,348</td>
             <td class="marketPrice__data">$1,046,899,935,348 <br> <span>653,452 BTC</span></td>
             <td class="marketPrice__data sm-hide"><img src="./images/stock-line-green.svg" alt="" class="stockLine"> <img src="./images/table-dots.svg" alt="" class="marketPrice__dots"></td>
           </tr>
@@ -150,7 +154,7 @@
                 <img src="./images/angle-up-red.svg" alt="" class="arrow-icon"> 15.86%
               </div>
             </td>
-            <td class="marketPrice__data sm-hide">$1,046,899,935,348</td>
+            <td class="marketPrice__data sm-hide sm-hide--active">$1,046,899,935,348</td>
             <td class="marketPrice__data">$1,046,899,935,348 <br> <span>653,452 BTC</span></td>
             <td class="marketPrice__data sm-hide"><img src="./images/stock-line-red.svg" alt="" class="stockLine"> <img src="./images/table-dots.svg" alt="" class="marketPrice__dots"></td>
           </tr>
@@ -172,7 +176,7 @@
                 <img src="./images/angle-up-green.svg" alt="" class="arrow-icon"> 15.86%
               </div>
             </td>
-            <td class="marketPrice__data sm-hide">$1,046,899,935,348</td>
+            <td class="marketPrice__data sm-hide sm-hide--active">$1,046,899,935,348</td>
             <td class="marketPrice__data">$1,046,899,935,348 <br> <span>653,452 BTC</span></td>
             <td class="marketPrice__data sm-hide"><img src="./images/stock-line-green.svg" alt="" class="stockLine"> <img src="./images/table-dots.svg" alt="" class="marketPrice__dots"></td>
           </tr>
@@ -194,7 +198,7 @@
                 <img src="./images/angle-up-red.svg" alt="" class="arrow-icon"> 15.86%
               </div>
             </td>
-            <td class="marketPrice__data sm-hide">$1,046,899,935,348</td>
+            <td class="marketPrice__data sm-hide sm-hide--active">$1,046,899,935,348</td>
             <td class="marketPrice__data">$1,046,899,935,348 <br> <span>653,452 BTC</span></td>
             <td class="marketPrice__data sm-hide"><img src="./images/stock-line-red.svg" alt="" class="stockLine"> <img src="./images/table-dots.svg" alt="" class="marketPrice__dots"></td>
           </tr>
@@ -216,7 +220,7 @@
                 <img src="./images/angle-up-green.svg" alt="" class="arrow-icon"> 15.86%
               </div>
             </td>
-            <td class="marketPrice__data sm-hide">$1,046,899,935,348</td>
+            <td class="marketPrice__data sm-hide sm-hide--active">$1,046,899,935,348</td>
             <td class="marketPrice__data">$1,046,899,935,348 <br> <span>653,452 BTC</span></td>
             <td class="marketPrice__data sm-hide"><img src="./images/stock-line-green.svg" alt="" class="stockLine"> <img src="./images/table-dots.svg" alt="" class="marketPrice__dots"></td>
           </tr>
@@ -224,176 +228,207 @@
       </table>
       </div>
     </section>
-    <section class="platform">
-      <div class="box1">
+    <!-- Market Update Section -->
 
-          <div class="text">
-              <h2>The most trusted cryptocurrency platform</h2>
+    <!-- Features Section Starts -->
+    <section class="features">
+      <div class="wrapper">
+        <h2 class="features__heading">The most trusted cryptocurrency platform</h2>
+        <div class="features__flex">
+          <div class="features__card">
+            <img src="images/coin.png" alt="" class="features__icon">
+            <h3 class="features__subheading">Ease of Trading</h3>
+            <ul class="features__offer">
+                <li>Intuitive interface</li>
+                <li>Instant deposit options</li>
+                <li>Cash out directly to your bank account</li>
+            </ul>
           </div>
-  
-          <div class="container">
-
-              <div class="trade">
-                  <div class="trade-img">
-                      <img src="images/coin.png" alt="" class="img-con">
-                  </div>
-                  <div>
-                      <h3>Ease of Trading</h3>
-                      <ul class="p1">
-                          <li>Intuitive interface</li>
-                          <li>Instant deposit options</li>
-                          <li>Cash out directly to your bank account</li>
-                      </ul>
-                  </div>
-              </div>
-          
-  
-  
-         
-              <div class="trade">
-                  <img src="images/bitcoin.png" alt="" class="img-con">
-                  <h3>Institutional-grade Security</h3>
-                  <ul class="p1">
-                      <li>98% of assets stored safely offline</li>
-                      <li>Highly encrypted personal data</li>
-                      <li>Whitelisting and transaction confirmations</li>
-                  </ul>
-              </div>
-          
-  
-  
-         
-              <div class="trade">
-                  <img src="images/scale.png" alt="" class="img-con">
-                  <h3>Proven Reliability</h3>
-                  <ul class="p1">
-                      <li>Exchanging bitcoin since 2011</li>
-                      <li>Industry-leading uptime</li>
-                      <li>24/7 dedicated support</li>
-                  </ul>
-              </div>
+          <div class="features__card">
+            <img src="images/bitcoin.png" alt="" class="features__icon">
+            <h3 class="features__subheading">Ease of Trading</h3>
+            <ul class="features__offer">
+              <li>98% of assets stored safely offline</li>
+              <li>Highly encrypted personal data</li>
+              <li>Whitelisting and transaction confirmations</li>
+            </ul>
           </div>
-      
+          <div class="features__card">
+            <img src="images/coin.png" alt="" class="features__icon">
+            <h3 class="features__subheading">Institutional-grade Security</h3>
+            <ul class="features__offer">
+              <li>Exchanging bitcoin since 2011</li>
+              <li>Industry-leading uptime</li>
+              <li>24/7 dedicated support</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      
+    </section>
+    <!-- Features Section Ends -->
 
-  </section>
-
-
-  <div class="box2">
-     <div class="box-content">
-      <div class="text2">
-
-          <h2>Try the future, today. Download Crypto</h2>
-          <p class="p2">Stay connected to the market with our mobile app. Featuring advanced order types
-          and analytical tools for experienced traders, as well as a simple buy & sell interface 
-          for those just getting started.</p>
-      </div>
-      <div class="img-box">
-
-          <img src="images/shape.png" alt="" class="shape ">
-          <img src="images/app.png" alt="" class="app">
-      </div>
-     </div>
-     <div class="img-box2">
-      <img src="images/appstore.png" alt="" class="appstore">
-      <img src="images/google.png" alt="" class="google">
-     </div>
-  </div>
-
-
-  <div class="box3">
-
-      <h2 class="head3">Learn to thrive</h2>
-     
-      <div class="box-content2">
-          
-
-          <div class="sub"> 
-              <div class="sub-img">
-                <img src="images/crypto.png" alt="">
-              </div>
-              <div class="sub-sec">
-                  <h5>New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange</h5>
-                  <p class="text3">We urge everyone adopt good cybersecurity habits, and to have unique passwords on every site they use...</p>
-                  <div class="sub-con">
-                          <p>By: Jennia Peris</p>
-                     <div class="sub-sec-p">
-                          <img src="images/date.png" alt="">
-                          <span>15/07/2021</span>
-                     </div>
-                     <div class="sub-sec-p">
-                          <img src="images/time.png" alt="">
-                          <span>5 Min to read</span>
-                      </div>
-                  </div>
-              </div>
+    <!-- App Download Section Starts -->
+    <section class="download">
+      <div class="wrapper">
+        <div class="download__flex">
+          <div class="download__flex_main">
+            <div class="download__content">
+              <h2 class="download__heading">Try the future, today. Download Crypto</h2>
+                <p class="download__desc">Stay connected to the market with our mobile app. Featuring advanced order types
+                and analytical tools for experienced traders, as well as a simple buy & sell interface 
+                for those just getting started.</p>
+            </div>
+            <div class="download__illustration">
+              <img src="./images/app.png" alt="" class="app-illustration">
+              <img src="./images/app-desktop.svg" alt="" class="app-illustration2">
+            </div>
           </div>
 
-
-
-          <div class="sub"> 
-              <div class="sub-img"> 
-                 <img src="images/pair.png" alt="">
-              </div>
-              <div class="sub-sec">
-                  <h5>New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange</h5>
-                  <p class="text3">We urge everyone adopt good cybersecurity habits, and to have unique passwords on every site they use...</p>
-                  <div class="sub-con">
-
-                      <p>By: Jennia Peris</p>
-                 <div class="sub-sec-p">
-                      <img src="images/date.png" alt="">
-                      <span>15/07/2021</span>
-                 </div>
-                 <div class="sub-sec-p">
-                      <img src="images/time.png" alt="">
-                      <span>5 Min to read</span>
-                  </div>
-              </div>
-              </div>
+          <div class="download__btns">
+            <img src="images/appstore.png" alt="" class="appstore">
+            <img src="images/google.png" alt="" class="google">
           </div>
-
-
-
-          <div  class="sub"> 
-              <div class="sub-img">
-                 <img src="images/trading.png" alt="">
-              </div>
-              <div class="sub-sec">
-                  <h5>New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange</h5>
-                  <p class="text3">We urge everyone adopt good cybersecurity habits, and to have unique passwords on every site they use...</p>
-                  <div class="sub-con">
-
-                      <p>By: Jennia Peris</p>
-                 <div class="sub-sec-p">
-                      <img src="images/date.png" alt="">
-                      <span>15/07/2021</span>
-                 </div>
-                 <div class="sub-sec-p">
-                      <img src="images/time.png" alt="">
-                      <span>5 Min to read</span>
-                  </div>
-                  </div>
-              </div>
-         </div>
-
-            <!-- <div>
-              <p>By: Jennia Peris</p>
-              <img src="images/date.png" alt=""><span>15/07/2021</span>
-              <img src="images/shape.png" alt=""><span>5 Min to read</span>
-            </div> -->
-
-          </div>
-
-
-
+        </div>
       </div>
-  </div>
+    </section>
+    <!-- App Download Section Ends -->
 
+    <!-- News Section Starts -->
+    <section class="news">
+      <div class="wrapper">
+        <h2 class="news__heading">Learn to thrive</h2>
+        <div class="news__flex">
+          <div class="news__card">
+            <img src="./images/crypto.png" alt="" class="news__card_img">
+            <div class="news__card_content">
+              <h3 class="news__card_heading">New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange</h3>
+              <p class="news__card_desc">We urge everyone adopt good cybersecurity habits, and to have unique passwords on every site they use...</p>
+              <div class="news__card_flex">
+                <p class="news__card_footer">By: Jennia Peris</p>
+                <p class="news__card_footer"><img src="images/date.png" alt="">
+                  <span class="datetime">15/07/2021</span></p>
+                <p class="news__card_footer"><img src="images/time.png" alt="">
+                  <span class="datetime">5 Min to read</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news__card">
+            <img src="./images/pair.png" alt="" class="news__card_img">
+            <div class="news__card_content">
+              <h3 class="news__card_heading">New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange</h3>
+              <p class="news__card_desc">We urge everyone adopt good cybersecurity habits, and to have unique passwords on every site they use...</p>
+              <div class="news__card_flex">
+                <p class="news__card_footer">By: Jennia Peris</p>
+                <p class="news__card_footer"><img src="images/date.png" alt="">
+                  <span class="datetime">15/07/2021</span></p>
+                <p class="news__card_footer"><img src="images/time.png" alt="">
+                  <span class="datetime">5 Min to read</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news__card news__card--active">
+            <img src="./images/trading.png" alt="" class="news__card_img">
+            <div class="news__card_content">
+              <h3 class="news__card_heading">New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange</h3>
+              <p class="news__card_desc">We urge everyone adopt good cybersecurity habits, and to have unique passwords on every site they use...</p>
+              <div class="news__card_flex">
+                <p class="news__card_footer">By: Jennia Peris</p>
+                <p class="news__card_footer news__card_footer--active"><img src="images/date.png" alt="">
+                  <span class="datetime">15/07/2021</span></p>
+                <p class="news__card_footer news__card_footer--active"><img src="images/time.png" alt="">
+                  <span class="datetime">5 Min to read</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- News Section Ends -->
+
+    <!-- CTA Section Starts -->
+    <section class="subscribe">
+      <div class="wrapper">
+        <div class="subscribe__content">
+          <h2 class="subscribe__heading">Never miss a drop</h2>
+          <p class="subscribe__desc">Subscribe for the latest news, drops & collectibles</p>
+          <form action="" class="subscribe__form">
+            <input class="subscribe__form_input" type="email" placeholder="Enter your email address" required>
+            <button class="subscribe__form_btn">Subscribe</button>
+          </form>
+          <img src="./images/cta-ribbon.png" alt="" class="subscribe__ribbon subscribe__ribbon--active">
+          <img src="./images/cta-ribbon-1.png" alt="" class="subscribe__ribbon subscribe__ribbon--active">
+      </div>
+        </div>
+    </section>
+    <!-- CTA Section Ends -->
   </main>
 
-  <div>
+  <footer>
+    <div class="wrapper">
+      <div class="grid"> 
+        <div class="grid__items">
+          <h4 class="grid__heading" id="company">Company</h4>
+          <ul class="grid__menu">
+            <li class="grid__list"><a href="" class="grid__links">About us</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Terms of use</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Privacy Policy</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div class="grid__items">
+          <h4 class="grid__heading" id="business">Businesses</h4>
+          <ul class="grid__menu">
+            <li class="grid__list"><a href="" class="grid__links">Prime</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Custody</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Asset Hub</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Commerce</a></li>
+          </ul>
+        </div>
+        <div class="grid__items">
+          <h4 class="grid__heading" id="exchange">Exchange</h4>
+          <ul class="grid__menu">
+            <li class="grid__list"><a href="" class="grid__links">Exchange Home</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Margin Trading</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Derivatives Trading</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Trading Arena</a></li>
+          </ul>
+        </div>
+        <div class="grid__items">
+          <h4 class="grid__heading" id="blockchain">Blockchain</h4>
+          <ul class="grid__menu">
+            <li class="grid__list"><a href="" class="grid__links">Chain Explorer</a></li>
+            <li class="grid__list"><a href="" class="grid__links">The Syndicate</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Security</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Cryptous Credit</a></li>
+          </ul>
+        </div>
+        <div class="grid__items">
+          <h4 class="grid__heading" id="resources">Resources</h4>
+          <ul class="grid__menu">
+            <li class="grid__list"><a href="" class="grid__links">Prices</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Site Widgets</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Tax</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Blog</a></li>
+            <li class="grid__list"><a href="" class="grid__links">Research</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer__underline" />
+      <div class="credit">
+        <div class="social-icons">
+          <span><i class="fa-brands fa-facebook-f"></i></span>
+          <span><i class="fa-brands fa-twitter active"></i></span>
+          <span><i class="fa-brands fa-instagram"></i></span>
+          <span><i class="fa-brands fa-linkedin-in"></i></span>
+        </div>
+        <p>Copyright 2021, Cryptous</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <div>
     <section class="toge">
       <div class="headings">
         <h1>Never miss a drop</h1>
@@ -407,12 +442,11 @@
         /><button class="sub">Subscribe</button>
       </div>
     </section>
-  </main>
 
   <footer>
     <div class="footn">
-      <div class="ftn">
-        <p class="hdone" id="a">Company</p>
+      <div class="grid__item">
+        <p class="grid__heading" id="a">Company</p>
         <p>About us</p>
         <p>Terms of use</p>
         <p>Privacy Policy</p>
@@ -459,5 +493,6 @@
       </div>
     </div>
   </footer>
+  </div> -->
 </body>
 </html>
