@@ -810,8 +810,30 @@ footer {
     }
 
    .grid {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 80px;
+    padding-top: 81.91px;
+    padding-bottom: 109.09px;
+    row-gap: 30px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 180px);
+    }
+
+    .grid__heading {
+        font-size: 18px;
+        line-height: 22px;
+        padding-bottom: 32.41px;
+    }
+
+    .grid__list {
+        padding-bottom: 0;
+    }
+
+    .grid__list:not(:last-of-type) {
+        padding-bottom: 32.41px;
+    }
+    
+    .grid__links {
+        font-size: 17px;
+        line-height: 24px;
     }
 
     .app-illustration {
@@ -1066,8 +1088,9 @@ footer {
     }
 
     .grid {
-        grid-template-columns: repeat(5, 1fr);
-        column-gap: 80px;
+        grid-template-columns: repeat(2, 120px) repeat(2, 180px) 120px;
+        /* column-gap: 80px; */
+        row-gap: 0px;
         }
 
 
