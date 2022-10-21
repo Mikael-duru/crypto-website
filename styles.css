@@ -126,6 +126,12 @@ header, .marketPrice {
     }
 }
 
+@media screen and (max-width: 1439px)  {
+    .hero__image-2 {
+        display: none;
+    }
+}
+
 .nav__menu {
     display: flex;
     justify-content: center;
@@ -988,7 +994,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
     .wrapper {
-        max-width: 1180px;
+        max-width: 1214px;
         padding-left: 5rem;
         padding-right: 5rem;
     }
@@ -1024,13 +1030,6 @@ footer {
         display: inline-block;
         padding-top: 1.588rem;
       }
-
-      .hero__image-2 {
-        position: absolute;
-        left: 725px;
-        top: 230px;
-        /* z-index: 0; */
-    }
 
     .features__flex {
         display: flex;
@@ -1159,13 +1158,6 @@ footer {
         z-index: 10;
     }
 
-    /* .hero__image-2 {
-        position: absolute;
-        left:600px;
-        top: 215px;
-        /* z-index: 0; */
-    } */
-
     .scrool {
         padding-top: 0rem;
     }
@@ -1182,6 +1174,10 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .logo {
+        margin-right: 10.78rem;
     }
 
     /* #showMenu, #openMenu, #closeMenu {
@@ -1240,6 +1236,10 @@ footer {
         left: 835px;
         top: 270px;
         /* z-index: 0; */
+    }
+
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
