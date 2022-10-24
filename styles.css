@@ -442,8 +442,153 @@ header, .marketPrice {
 }
 
 .download__illustration {
+    position: relative;
+    max-width: 50%;
+    /* width: 98.33px; */
     padding-bottom: 29.52px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.app-illustration {
+    position: relative;
+    top: 0;
+    left: 40px;
+    z-index: 1;
+}
+
+@media screen and (min-width: 375px) {
+    .app-illustration {
+        position: relative;
+        top: 0;
+        left: 45px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .app-illustration {
+        position: relative;
+        top: 0;
+        left: 53px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .app-illustration {
+        position: relative;
+        top: 0;
+        left: 65px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .app-illustration {
+        position: relative;
+        top: 0;
+        left: 47px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .app-illustration {
+        position: relative;
+        top: 0;
+        left: 110px;
+    }
+}
+
+.app-illustration2 {
+    position: absolute;
+    top: 0;
+    left: -38px;
+    z-index: 2;
+}
+
+@media screen and (min-width: 375px) {
+    .app-illustration2 {
+        position: absolute;
+        top: 0;
+        left: -47px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .app-illustration2 {
+        position: absolute;
+        top: 0;
+        left: -54px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .app-illustration2 {
+        position: absolute;
+        top: 0;
+        left: -65px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .app-illustration2 {
+        position: absolute;
+        top: 0;
+        left: -47px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .app-illustration2 {
+        position: absolute;
+        top: 0;
+        left: 63px;
+    }
+}
+
+.app-illustration3 {
+    position: absolute;
+    top: -10px;
+    left: 78px;
+}
+
+@media screen and (min-width: 375px) {
+    .app-illustration3 {
+        position: absolute;
+        top: -6px;
+        left: 111px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .app-illustration3 {
+        position: absolute;
+        top: -3px;
+        left: 142px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .app-illustration3 {
+        position: absolute;
+        top: 12px;
+        left: 274px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .app-illustration3 {
+        position: absolute;
+        left: 293px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .app-illustration3 {
+        position: absolute;
+        left: 408px;
+    }
+}
+
 
 .download__btns {
     display: flex;
@@ -638,13 +783,13 @@ footer {
     grid-row: 2/3;
     }
 
-    .app-illustration2 {
+    /* .app-illustration2 {
         display: none;
     }
 
     .app-illustration1 {
         display: initial;
-    }
+    } */
 }
 
 .grid__items:not(:last-of-type) {
@@ -860,13 +1005,13 @@ footer {
         line-height: 24px;
     }
 
-    .app-illustration {
+    /* .app-illustration {
         display: none;
     }
 
     .app-illustration2 {
         display: initial;
-    }
+    } */
 
     .credit {
         display: flex;
@@ -1185,7 +1330,7 @@ footer {
     .download__flex_main {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        /* align-items: center; */
         width: 100%;
         gap: 124.53px;
     }
@@ -1195,8 +1340,9 @@ footer {
     }
 
     .download__flex {
-        padding-top: 117.54px;
-        padding-bottom: 180.78px;
+        position: relative;
+        padding-top: 110px;
+        padding-bottom: 101.82px;
         text-align: center;
     }
 
@@ -1206,7 +1352,7 @@ footer {
 
     .download__heading {
         max-width: 24ch;
-        margin-top:-50px;
+        padding-top: 78.95px;
     }
 
     .download__desc {
@@ -1218,8 +1364,10 @@ footer {
     }
 
     .download__btns {
+        position: absolute;
+        top: 460.97px;
         justify-content: flex-start;
-        margin-top: -150px;
+        /* margin-top: -150px; */
     }
 
     .news__flex {
