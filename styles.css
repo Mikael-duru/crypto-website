@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
 }
 
 img {
@@ -780,7 +779,7 @@ footer {
 @media screen and (max-width: 767px) {
     .grid__items:nth-child(5){
         grid-row: 3/3;
-       }
+    }
     .grid__items:nth-child(4){
     grid-row: 2/3;
     }
@@ -906,6 +905,8 @@ footer {
 
     .marketPrice__title  {
         font-size: 2rem;
+        line-height: 48px;
+        padding-bottom: 2rem;
     }
 
     .features__heading {
@@ -939,8 +940,6 @@ footer {
     }
 
     .news__heading {
-        font-size: 32px;
-        line-height: 32px;
         padding-top: 100.39px;
         padding-bottom: 10px;
     }
