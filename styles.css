@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px solid red;
 }
 
 img {
@@ -34,6 +35,7 @@ a {
 
 header, .marketPrice {
     background: #1B004E;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -493,7 +495,7 @@ header, .marketPrice {
     .app-illustration {
         position: relative;
         top: 0;
-        left: 110px;
+        left: 92px;
     }
 }
 
@@ -541,7 +543,7 @@ header, .marketPrice {
     .app-illustration2 {
         position: absolute;
         top: 0;
-        left: 63px;
+        left: 47px;
     }
 }
 
@@ -585,7 +587,7 @@ header, .marketPrice {
 @media screen and (min-width: 1440px) {
     .app-illustration3 {
         position: absolute;
-        left: 408px;
+        left: 390px;
     }
 }
 
@@ -902,6 +904,10 @@ footer {
         margin-bottom: 50px;
     }
 
+    .marketPrice__title  {
+        font-size: 2rem;
+    }
+
     .features__heading {
         font-size: 32px;
         line-height: 48px;
@@ -1177,22 +1183,21 @@ footer {
     .hero {
         width: 100%;
         height: 100%;
-        padding-top: 5rem;
+        padding-top: 7.57rem;
     }
 
     .hero__flex {
         display: flex;
         justify-content: space-between;
-        align-items: center;
     }
 
     .hero__content {
-        flex: 1;
+        flex-shrink: 0;
         text-align: left;
-        width: 60%;
     }
 
     .hero__title {
+        font-size: 3rem;
         max-width: 20ch;
     }
 
@@ -1202,38 +1207,37 @@ footer {
     }
 
     .hero__illustration {
+        position: relative;
         flex-grow: 1;
         flex-shrink: 0;
-        padding-right: 3.06rem;
-        margin-top: -70px;
     }
 
     .hero__image {
-        z-index: 10;
+        position: relative;
+        top: 90px;
+        left: -105px;
     }
 
-    .scrool {
-        padding-top: 0rem;
+    .hero__image2 {
+        position: absolute;
+        left: 35px;
+        top: -70px;
     }
 
     .wrapper__ribbon {
         display: block;
         position: absolute;
-        top: 138.21px;
+        top: 120px;
         left: -3px;
     }
 
-    .hero {
-        padding-top: 7.57rem;
-    }
-
-    .hero__title {
-        font-size: 3rem;
-    }
-
     .scrool {
-        display: inline-block;
-        padding-top: 1.588rem;
+        display: block;
+        position: absolute;
+        bottom: 1.588rem;
+        left: 50%;
+        padding-top: 3.21rem;
+        /* padding-bottom: 0; */
     }
 
     .marketPrice {
@@ -1496,6 +1500,19 @@ footer {
         position: absolute;
         left: 835px;
         top: 270px;
+    }
+
+    .hero__image2 {
+        position: absolute;
+        left: 38px;
+        top: -50px;
+    }
+
+    .wrapper__ribbon {
+        display: block;
+        position: absolute;
+        top: 138.21px;
+        left: -3px;
     }
 
     .grid {
