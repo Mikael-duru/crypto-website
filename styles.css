@@ -1006,7 +1006,7 @@ footer {
         font-size: 0.875rem;
         line-height: 100%;
         margin-bottom: 50px;
-        z-index: 5;
+        z-index: 100;
     }
 
     .marketPrice__title  {
@@ -1134,7 +1134,7 @@ footer {
 @media screen and (min-width: 1024px) {
     header {
         position: relative;
-        height: 700px;
+        height: 820px;
     }
 
     .wrapper {
@@ -1155,6 +1155,8 @@ footer {
         position: absolute;
         bottom: 0;
         left: 0;
+        height: 300px;
+        width: 100%;
     }
 
     #showMenu, #openMenu, #closeMenu {
@@ -1235,7 +1237,7 @@ footer {
     .scrool {
         display: block;
         position: absolute;
-        bottom: 1.588rem;
+        bottom: 7rem;
         left: 50%;
         padding-top: 3.21rem;
     }
