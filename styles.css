@@ -498,9 +498,9 @@ header, .marketPrice {
 
 .news__card_desc {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    display: flex;
     letter-spacing: 0.03em;
     color: #4F4F4F;
     padding-bottom: 28.65px;
@@ -510,10 +510,8 @@ header, .marketPrice {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.news__card__footer {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     display: flex;
@@ -522,9 +520,11 @@ header, .marketPrice {
     color: #616161;
 }
 
-.news__card_footer--active {
+.news__card__footer {
+    font-family: 'Open Sans', sans-serif;
     display: flex;
-    gap: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Subscribe Section Starts */
