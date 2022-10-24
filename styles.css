@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
 }
 
 img {
@@ -45,6 +44,50 @@ header, .marketPrice {
     padding-right: 0.96rem;
 }
 
+@media screen and (min-width: 320px) {
+    .wrapper {
+        max-width: 320px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .wrapper {
+        max-width: 375px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .wrapper {
+        max-width: 425px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        max-width: 768px;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        max-width: 1024px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .wrapper {
+        max-width: 1280px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .wrapper {
+        max-width: 1440px;
+    }
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -64,7 +107,7 @@ header, .marketPrice {
 }
 
 
-@media screen and (max-width: 1129px) {
+@media screen and (max-width: 1023px) {
     .nav {
         position: fixed;
         top: 0;
@@ -121,13 +164,7 @@ header, .marketPrice {
         /* transition: all 1s linear; */
     }
 
-    .hero__ribbon, .hero__illustration, .wrapper__ribbon, .scrool {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1439px)  {
-    .hero__image-2 {
+    .hero__illustration, .wrapper__ribbon, .scrool, .subscribe__ribbon, svg {
         display: none;
     }
 }
@@ -139,7 +176,7 @@ header, .marketPrice {
     gap: 1.25rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .nav__menu {
         flex-direction: column;
         margin-bottom: 2rem;
@@ -174,7 +211,6 @@ header, .marketPrice {
     text-transform: capitalize;
     cursor: pointer;
 }
-
 
 .nav__btn:hover {
     background: #EB5757;
@@ -225,12 +261,6 @@ header, .marketPrice {
     background-color: transparent;
 }
 
-@media screen and (max-width: 900px) {
-    .hero__illustration, .scrool, svg {
-        display: none;
-    }
-}
-
 .marketPrice {
     margin-top: -1.25rem;
     padding-bottom: 4.06rem;
@@ -262,7 +292,7 @@ header, .marketPrice {
     border-bottom: 0.6px solid #BDBDBD;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1023px) {
     .marketPrice__bRow:last-child {
         border-bottom: none;
     }
@@ -497,13 +527,6 @@ header, .marketPrice {
     gap: 5px;
 }
 
-
-@media screen and (max-width: 900px) {
-    .subscribe__ribbon {
-        display: none;
-    }
-}
-
 /* Subscribe Section Starts */
 .subscribe {
     position: relative;
@@ -571,7 +594,6 @@ header, .marketPrice {
 
 .subscribe__form_btn {
     width: 40%;
-    /* max-width: 139px; */
     padding: 13px 34px;
     margin-top: 4px;
     margin-bottom: 4px;
@@ -587,11 +609,11 @@ header, .marketPrice {
     border: none;
     outline: none;
     cursor: pointer;
-    /* transform: scale(1); */
+    transform: scale(1);
 }
 
 .subscribe__form_btn:hover {
-    transform: scale(0.9);
+    transform: scale(0.98);
 }
 
 
@@ -686,23 +708,23 @@ footer {
     border: 1px solid #eb5757;
   }
 
+.credit {
+    padding-top: 1.627rem;
+    padding-bottom: 2.197rem;
+}
+
 .credit p {
-    padding-top: 26.04px;
+    padding-top: 1.627rem;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #BCBCBC;
+    text-align: center;
 }
 
 
 @media screen and (min-width: 768px) {
-   .wrapper {
-    max-width: 768px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-   }
-
    .navbar {
     padding-top: 1.938rem;
     }
@@ -718,9 +740,6 @@ footer {
 
     .hero__title {
         font-size: 2.8rem;
-        /* max-width: 20ch;
-        margin-left: auto;
-        margin-right: auto; */
     }
 
     .hero__desc {
@@ -819,7 +838,6 @@ footer {
     padding-top: 81.91px;
     padding-bottom: 109.09px;
     row-gap: 30px;
-    /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: repeat(3, 180px);
     }
 
@@ -850,50 +868,41 @@ footer {
         display: initial;
     }
 
+    .credit {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2.30rem;
+        padding-bottom: 3.19rem;
+    }
+
+    .credit p {
+        padding-top: 0;
+    }
+
 }
 
 @media screen and (min-width: 901px) {
-    .wrapper {
+    /* .wrapper {
         max-width: 901px;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-    }
+    } */
 
-    .wrapper__ribbon {
-        display: block;
-        position: absolute;
-        top: 138.21px;
-        left: -3px;
-      }
     
-    header {
-        position: relative;
-        height: 600px;
-    }
+    
+    
 
-    .wavy-bg {
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(227.07deg, #4E0062 0.43%, #220076 99.56%);
-        background-position: bottom;
-        
-    }
-
-    svg {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-
-    .hero {
+    /* .hero {
         padding-top: 6rem;
     }
 
     .hero__title {
         font-size: 3rem;
-    }
+    } */
 
-    .marketPrice {
+    /* .marketPrice {
         padding-bottom: 6.93rem;
     }
 
@@ -918,13 +927,202 @@ footer {
     .marketPrice__data:nth-child(2) {
         width: 128px;
         padding-right: 56.63px;
+    } */
+/*
+    .marketPrice__head:nth-child(3),
+    .marketPrice__data:nth-child(3) {
+        text-align: center;
+        padding-right: 45px;
     }
 
-    @media screen and (max-width: 1150px) {
+    .marketPrice__data:nth-child(4),
+    .marketPrice__data:nth-child(5) {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 123%;
+    }
+
+    .marketPrice__head:nth-child(4){
+        text-align: left;
+    }
+
+    .marketPrice__data:nth-child(4) {
+        width: 49.53px;
+        padding-right: 64.69px;
+    }
+    
+    .marketPrice__head:nth-child(5) {
+        text-align: left;
+        padding-left: .5rem;
+    } */
+/* 
+    .marketPrice__data:nth-child(5){
+        width: 58px;
+        padding-right: 45px;
+    }
+
+    .marketPrice__head:nth-child(6) .flex {
+        justify-content: center;
+    }
+
+    .marketPrice__data:nth-child(6) {
+        text-align: center;
+    }
+
+    .marketPrice__data:nth-child(7) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .marketPrice__dots {
+        padding-left: 20px; */
+    }
+
+
+@media screen and (min-width: 1024px) {
+    header {
+        position: relative;
+        height: 700px;
+    }
+
+    .wrapper {
+        max-width: 1024px;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+    .wavy-bg {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(227.07deg, #4E0062 0.43%, #220076 99.56%);
+        background-position: bottom;
+        
+    }
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    #showMenu, #openMenu, #closeMenu {
+        display: none;
+    }
+
+
+    .logo {
+        margin-right: 7rem;
+    }
+
+    .nav {
+        flex: 1;
+        
+    }
+
+    .nav__flex {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+        height: 100%;
+        padding-top: 5rem;
+    }
+
+    .hero__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero__content {
+        flex: 1;
+        text-align: left;
+        width: 60%;
+    }
+
+    .hero__title {
+        max-width: 20ch;
+    }
+
+    .hero__desc {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero__illustration {
+        flex-grow: 1;
+        flex-shrink: 0;
+        padding-right: 3.06rem;
+        margin-top: -70px;
+    }
+
+    .hero__image {
+        z-index: 10;
+    }
+
+    .scrool {
+        padding-top: 0rem;
+    }
+
+    .wrapper__ribbon {
+        display: block;
+        position: absolute;
+        top: 138.21px;
+        left: -3px;
+    }
+
+    .hero {
+        padding-top: 7.57rem;
+    }
+
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .scrool {
+        display: inline-block;
+        padding-top: 1.588rem;
+    }
+
+    .marketPrice {
+        padding-bottom: 6.93rem;
+    }
+
+    .marketPrice__title {
+        padding-top: 5.93rem;
+        margin-bottom: 3.75rem;
+    }
+
+    /* @media screen and (max-width: 1280px) {
         .sm-hide--active {
             display: none;
         }
+    } */
+
+    .marketPrice__data:first-child {
+        text-align: left;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        color: #828282;
+        padding-right: 1rem;
     }
+
+    .star-icon {
+        padding-right: 12px;
+    }
+
+    .marketPrice__data:nth-child(2) {
+        width: 128px;
+        padding-right: 56.63px;
+    } 
 
     .marketPrice__head:nth-child(3),
     .marketPrice__data:nth-child(3) {
@@ -974,62 +1172,6 @@ footer {
     .marketPrice__dots {
         padding-left: 20px;
     }
-
-    .subscribe__ribbon {
-        position: absolute;
-    }
-
-    .subscribe__ribbon--active {
-        left: -119.91px;
-        top: 55px;
-    }
-
-    .subscribe__ribbon--active2 {
-        /* left: -119.91px;
-        top: 55px; */
-        right: -.82%;
-        top: 21%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .wrapper {
-        max-width: 1214px;
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-
-    .hero {
-        padding-top: 7.57rem;
-    }
-
-    .hero__title {
-        font-size: 3rem;
-    }
-
-    header {
-        position: relative;
-        height: 700px;
-    }
-
-    /* .wavy-bg {
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(227.07deg, #4E0062 0.43%, #220076 99.56%);
-        background-position: bottom;
-        
-    } */
-
-    /* svg {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    } */
-
-    .scrool {
-        display: inline-block;
-        padding-top: 1.588rem;
-      }
 
     .features__flex {
         display: flex;
@@ -1086,9 +1228,24 @@ footer {
         
     }
 
+    .subscribe__ribbon {
+        position: absolute;
+    }
+
+    .subscribe__ribbon--active {
+        left: -119.91px;
+        top: 55px;
+    }
+
+    .subscribe__ribbon--active2 {
+        right: -.82%;
+        top: 21%;
+    }
+
     .grid {
-        grid-template-columns: repeat(2, 120px) repeat(2, 180px) 120px;
-        /* column-gap: 80px; */
+        /* grid-template-columns: 120px 100px repeat(2, 1fr) 110px; */
+        grid-template-columns: 114.14px 102px 156.07px 129.61px 102px;
+        column-gap: 95px;
         row-gap: 0px;
         }
 
@@ -1096,10 +1253,7 @@ footer {
 }
 
 @media screen and (min-width: 1130px) {
-    #showMenu, #openMenu, #closeMenu {
-        display: none;
-    }
-
+/* 
     .logo {
         margin-right: 7rem;
     }
@@ -1126,17 +1280,15 @@ footer {
     }
 
     .hero__flex {
-        /* width: 1170px; */
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* gap: 151.37px; */
     }
 
     .hero__content {
+        flex: 1;
         text-align: left;
         width: 60%;
-        /* flex: 1; */
     }
 
     .hero__title {
@@ -1149,7 +1301,8 @@ footer {
     }
 
     .hero__illustration {
-        width: 30%;
+        flex-grow: 1;
+        flex-shrink: 0;
         padding-right: 3.06rem;
         margin-top: -70px;
     }
@@ -1160,10 +1313,10 @@ footer {
 
     .scrool {
         padding-top: 0rem;
-    }
+    } */
 }
 
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 1440px) {
     .wrapper {
         max-width: 1440px;
         padding-left: 8.4375rem;
@@ -1180,50 +1333,10 @@ footer {
         margin-right: 10.78rem;
     }
 
-    /* #showMenu, #openMenu, #closeMenu {
-        display: none;
-    } */
-
-    /* .hero {
-        padding-top: 5rem;
-    }
-
-    .hero__content {
-        text-align: left;
-    }
-
-    .hero__flex {
-        display: inline-flex;
-        justify-content: space-between;
-        gap: 151.37px;
-    } */
-
-    /* .hero__image-2 {
-        position: absolute;
-        left: 822px;
-        top: 305.35px;
-    }
-
- 
-      .wrapper__ribbon {
-        position: absolute;
-        top: 138.21px;
-        left: -3px;
-      } */
-/* 
-      .scrool {
-        display: inline-block;
-        padding-bottom: 1.588rem;
-      } */
-
-    
-}
-
-@media screen and (min-width: 1440px) {
     .nav__flex {
         display: flex;
-        /* justify-content: space-between; */
-        gap: 172.5px;
+        justify-content: space-between;
+        gap: 45px;
     }
 
     .hero__title {
@@ -1235,907 +1348,9 @@ footer {
         position: absolute;
         left: 835px;
         top: 270px;
-        /* z-index: 0; */
     }
 
     .grid {
-        grid-template-columns: repeat(5, 1fr);
+        gap: 141.18px;
     }
 }
-
-
-
-/* @media screen and (min-width: 1024px) {
-    .wrapper {
-        padding-left: 8.4375rem;
-        padding-right: 8.4375rem;
-    }
-
-    .navbar {
-        padding-top: 1.938rem;
-        gap: 10.68rem;
-    }
-
-    .logo {
-        font-size: 1.5rem;
-    }
-
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        gap: 10.781rem;
-    }
-
-    #showMenu, #openMenu, #closeMenu {
-        display: none;
-    }
-
-    .nav__flex {
-        display: flex;
-        justify-content: space-between;
-        gap: 172.5px;
-    }
-
-    .hero__content {
-        text-align: left;
-        flex: 0 0 665px;
-    }
-
-    .hero__flex {
-        display: flex;
-        justify-content: space-between;
-        gap: 151.37px;
-    }
-
-    
-    
-    
-    
-    
-
-    .hero__image-2 {
-        position: absolute;
-        left: 822px;
-        top: 305.35px;
-    }
-
-    .marketPrice__data:first-child {
-        text-align: left;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 100%;
-        color: #828282;
-        padding-right: 1rem;
-    }
-
-    .star-icon {
-        padding-right: 12px;
-    }
-
-    .marketPrice__data:nth-child(2) {
-        width: 128px;
-        padding-right: 56.63px;
-    }
-
-    .marketPrice__head:nth-child(3),
-    .marketPrice__data:nth-child(3) {
-        text-align: center;
-        padding-right: 45px;
-    }
-
-    .marketPrice__data:nth-child(4),
-    .marketPrice__data:nth-child(5) {
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 123%;
-    }
-
-    .marketPrice__head:nth-child(4){
-        text-align: left;
-    }
-
-    .marketPrice__data:nth-child(4) {
-        width: 49.53px;
-        padding-right: 64.69px;
-    }
-    
-    .marketPrice__head:nth-child(5) {
-        text-align: left;
-        padding-left: .5rem;
-    }
-
-    .marketPrice__data:nth-child(5){
-        width: 58px;
-        padding-right: 45px;
-    }
-
-    .marketPrice__head:nth-child(6) .flex {
-        justify-content: center;
-    }
-
-    .marketPrice__data:nth-child(6) {
-        text-align: center;
-    }
-
-    .marketPrice__data:nth-child(7) {
-        padding-left: 55px;
-        padding-right: 55px;
-    }
-
-    .marketPrice__dots {
-        padding-left: 20px;
-    }
-} */
-/* @media screen and (min-width: 1008px) {
-    .hero__content{
-        text-align: center;
-    }
-
-    .marketPrice__table {
-        max-width: 1170px;
-    }
-} */
-
-/* @media screen and (min-width: 1025px) {
-    .wrapper {
-        max-width: ;
-        padding-left: 8.4375rem;
-        padding-right: 8.4375rem;
-    }
-
-    .navbar {
-        padding-top: 1.938rem;
-        gap: 10.68rem;
-    }
-
-    .logo {
-        font-size: 1.5rem;
-    }
-
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        gap: 10.781rem;
-    }
-
-    #showMenu, #openMenu, #closeMenu {
-        display: none;
-    }
-
-    .nav__flex {
-        display: flex;
-        justify-content: space-between;
-        gap: 172.5px;
-    }
-
-    .wavy-bg {
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(227.07deg, #4E0062 0.43%, #220076 99.56%);
-        background-position: bottom;
-        position: relative;
-    }
-
-    svg {
-        position: absolute;
-        top: 37.1rem;
-        left: 0;
-    }
-
-    .logo {
-        font-size: 1.5rem;
-    }
-
-    .nav__menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1.25rem;
-    }
-
-    .nav__link {
-        font-family: 'Poppins', sans-serif;
-        text-transform: capitalize;
-        font-weight: 400;
-        font-size: 1.0625rem;
-        line-height: 141%;
-        color: #FFFFFF;
-    }
-
-    .nav__btn {
-        width: 152px;
-        height: 47px;
-        border: 2px solid #EB5757;
-        border-radius: 50px;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        font-size: 1.0625rem;
-        line-height: 100%;
-        color: #FFFFFF;
-        background-color: transparent;
-        text-transform: capitalize;
-    }
-    
-    .hero {
-        /* padding-top: 5rem; */
-    }
-
-    /* .hero__content {
-        text-align: left;
-    }
-
- 
-      .wrapper__ribbon {
-        position: absolute;
-        top: 138.21px;
-        left: -3px;
-      }
-
-      .scrool {
-        display: inline-block;
-        padding-bottom: 1.588rem;
-      }
-
-      .marketPrice__title {
-        padding-top: 5.93rem;
-        padding-bottom: 3.75rem;
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 48px;
-      }
-
-    .marketPrice__data:first-child {
-        text-align: left;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 100%;
-        color: #828282;
-        padding-right: 1rem;
-    }
-
-    .star-icon {
-        padding-right: 12px;
-    }
-
-    .marketPrice__data:nth-child(2) {
-        width: 128px;
-        padding-right: 56.63px;
-    }
-
-    .marketPrice__head:nth-child(3),
-    .marketPrice__data:nth-child(3) {
-        text-align: center;
-        padding-right: 45px;
-    }
-
-    .marketPrice__data:nth-child(4),
-    .marketPrice__data:nth-child(5) {
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 123%;
-    }
-
-    .marketPrice__head:nth-child(4){
-        text-align: left;
-    }
-
-    .marketPrice__data:nth-child(4) {
-        width: 49.53px;
-        padding-right: 64.69px;
-    }
-    
-    .marketPrice__head:nth-child(5) {
-        text-align: left;
-        padding-left: .5rem;
-    }
-
-    .marketPrice__data:nth-child(5){
-        width: 58px;
-        padding-right: 45px;
-    }
-
-    .marketPrice__head:nth-child(6) .flex {
-        justify-content: center;
-    }
-
-    .marketPrice__data:nth-child(6) {
-        text-align: center;
-    }
-
-    .marketPrice__data:nth-child(7) {
-        padding-left: 55px;
-        padding-right: 55px;
-    }
-
-    .marketPrice__data span {
-        position: absolute;
-        padding-top: 0.625rem;
-        font-weight: 600;
-        font-size: 0.6875rem;
-        color: #828282;
-        line-height: 11px;
-    }
-
-    .marketPrice__dots {
-        padding-left: 20px;
-    }
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.toge {
-    height: 450px;
-    
-    text-align: center;
-    color: #fff;
-    max-width: 100%;
-  }
-  .headings h1 {
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
-    font-size: 3.13em;
-    line-height: 1.5em;
-    padding: 92px 0 14px 0;
-  }
-  .headings p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 1.75em;
-    line-height: 0.8em;
-    padding-bottom: 50px;
-  }
-  /* input and button */
-  .int {
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid #fff;
-    border-radius: 37px;
-    width: 578px;
-    height: 74px;
-    outline: none;
-    margin: 0 auto;
-  }
-  .ema {
-    background-color: transparent;
-    /* margin-left: 30px; */
-    text-align: center;
-    font-size: 0.9em;
-    border: none;
-  }
-  .sub {
-    width: 139px;
-    height: 62px;
-    background-color: #eb5757;
-    border-radius: 31px;
-    border: none;
-    color: #fff;
-    margin: 4px 5px 4px 0px;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.07em;
-    font-weight: 500;
-  }
-
-  .credit {
-    text-align: center;
-    padding-top: 26.04px;
-    padding-bottom: 35.16px;
-  }
-
-.social-icons span {
-    
-    /* width: 32px;
-    height: 32px; */
-    margin-right: 16.32px;
-}
-
-/* .social-icons i {
-    border: 1px solid #616161;
-    border-radius: 10px;
-    font-size: 32px;
-    padding: 12px;
-} */
-
-
-
-.platform {
-    background: #FFF6FB;
-    width: 100%;
-}
-.box1{
-   padding: 100px 50px;
-    max-width: 100%;
-    
-}
-.text{
-    text-align: center;
-    padding-bottom: 20px;
-   
-}
-.text h2{
-    font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-
-color: #171717;
-padding-bottom: 40px;
-}
-.img-con{
-    padding-bottom: 20px;
-    
-}
-.h3{
-    font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-color: #000000;
-line-height: 14px;
-align-items: center;
-text-align: center;
-
-   
-}
-.p1{
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    color: #000000;
-    line-height: 35px;
-    list-style: none;
-    text-align: left;
-    justify-content: space-between;
-    padding: 10px 0px;
-   
-}
-.container {
-    display: flex;
-    width: 80%;
-    margin: auto;
-    padding-top: 50px;
-    justify-content: center;
-    align-items: baseline;
-    gap: 20px;
-}
-.trade{
-    
-   
-    text-align: left;
-    
-
-    
-}
-
-
-.box2{
-    background: #1b004e;
-  
- 
-     padding: 50px 0px; 
-    
-    height: 575.38px;
-  
-}
-.box-content{
-
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.text2{
-    max-width: 29ch;
-   padding-top: 100px;
-    color: #fff;
-}
-.img-box2{
-    display: flex;
-    padding-left: 140px;
-    gap: 20px;
-    
-   
-    
-}
-.google{
-    width: 15%;
-}
-.appstore{
-    width: 15%;
-}
-.p2{
-    padding-top: 20px;
-    padding-bottom: 50px;
-
-}
-.img-box{
-    width: 50%;
-    position: relative;
-}
-.shape{
-    position: absolute;
-    top: 15px;
-    left: 350px;  
-}
-.app{
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-}
-.box3{
-    background: #FFF6FB;
-    padding-top: 50px; 
-   
-    
-}
-
-.box-content2{
-    width: 100%;
-    padding: 100px 100px;
-    display: flex;
-    gap: 33px;
-
-    justify-content: space-around;
-   
-
-}
-.box3 .head3{
-    text-align: center;
-    padding: 50px 0px;
-}
-.sub{
-    
-    box-shadow: 0px 4px 8px rgba(203, 203, 203, 0.25);
-    border-radius: 10px;
-    
-    
-   
-}
-.sub-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-.sub-sec{
-   
-   
-    padding: 20px;
-    margin: auto;
-    
-}
-.sub-con{
-   display: flex;
- 
-   
-   justify-content: space-between;
-   gap: 30px;
-   
-}
-.sub-con > p, span {
-    font-size: 11px;
-    letter-spacing: 0.03em;
-    
-}
-.sub-sec h5{
-    padding: 4.55px 0px;
-    font-size: 16px;
-    margin-bottom: 13px;
-}
-.sub-sec > p{
-    color: #4F4F4F;
-    font-size: 14px;
-    margin-bottom: 28px;
-}
-.sub-sec-p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-@media only screen and (max-width: 600px) {
-    .container {
-     flex-direction: column;
-    
-    }
-    .box1{
-        height: auto;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .box-content{
-         flex-direction: column;
-    }
-    .trade{
-        width: 100%;
-        text-align: center;
-       
-    }
-    .p1{
-        text-align: center;
-    }
-    
-    .box2{
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .shape{
-        display: none;
-    }
-    .app{
-        position: relative;
-        width: 260px;
-        height: 250px;
-        margin: auto;
-        padding-bottom: 20px;
-        padding-left: 50px;
-    }
-    .box-content2{
-        flex-direction: column;
-        padding: 16px;
-    } 
-    .box3{
-        height: auto;
-    } 
-    .sub{
-        width: 100%;
-        
-        margin-bottom: 30px;
-    }  
-
-    .sub-con > p, span {
-        font-size: 9px;
-        letter-spacing: 0.03em;
-    }
-    .text{
-      
-        text-align: center;
-    }
-    .text2{
-        width: 80%;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-    }
-    
-    .img-box2{
-       display: flex;
-       padding: 0;
-       width: 100%;
-       align-self: center;
-       justify-content: center;
-       gap: 20px;
-       
-    }
-    .google, .appstore{
-        width: 30%;
-    }
-} 
-
-
-/* heading and paragraph */
-/* .toge {
-  height: 450px;
-  background-color: #1b004e;
-  text-align: center;
-  color: #fff;
-  max-width: 100%;
-}
-.headings h1 {
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
-  font-size: 3.13em;
-  line-height: 1.5em;
-  padding: 92px 0 14px 0;
-}
-.headings p {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 1.75em;
-  line-height: 0.8em;
-  padding-bottom: 50px; */
-}
-/* input and button */
-/* .int {
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid #fff;
-  border-radius: 37px;
-  width: 578px;
-  height: 74px;
-  outline: none;
-  margin: 0 auto;
-} */
-.ema {
-  background-color: transparent;
-  /* margin-left: 30px; */
-  text-align: center;
-  font-size: 0.9em;
-  border: none;
-}
-/* .sub {
-  width: 139px;
-  height: 62px;
-  background-color: #eb5757;
-  border-radius: 31px;
-  border: none;
-  color: #fff;
-  margin: 4px 5px 4px 0px;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.07em;
-  font-weight: 500;
-} */
-footer {
-  /* background: linear-gradient(227.07deg, #4E0062 0.43%, #220076 99.56%); */
-  /* height: 539.45px; */
-  /* padding: 81px; */
-}
-/* .footn {
-  display: flex;
-  justify-content: space-evenly;
-}
-.ftn .hdone {
-  font-weight: 600;
-  font-size: 1.1em;
-  color: #fff;
-}
-.ftn p {
-  margin-bottom: 35px;
-  font-weight: 400;
-  font-size: 0.9em;
-  font-family: "Inter", sans-serif;
-  color: #e6e6e6;
-}
-.ln {
-  margin: 59.09px 0px 44px 0px;
-  border: 1px solid #bcbcbc;
-  width: -20px; */
-  /* position: absolute; */
-  /* bottom: 90px;
-  left: -10px; */
-}
-/* .cpyrt {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Inter", sans-serif;
-  font-size: 0.88em;
-  color: #bcbcbc;
-}
-.icn i {
-  border: 1px solid #616161;
-  color: #616161;
-  border-radius: 10px;
-  padding: 8px;
-  width: 32px;
-  height: 32px;
-  margin-right: 16.32px;
-}
-.icn i.active {
-  background-color: #eb5757;
-  color: #fff; */
-}
-/* .icn i:hover {
-  background-color: #eb5757;
-} */
-/* @media only screen and (max-width: 700px) {
-  .toge {
-    height: 257.92px;
-  }
-  .headings h1 {
-    font-size: 1.5em;
-    text-align: center;
-    padding: 50px 0 10px 0;
-  }
-  .headings p {
-    font-size: 0.88em;
-    text-align: center;
-    padding-bottom: 30px; */
-  }
-  /* .int {
-    border: 2px solid #fff;
-    border-radius: 37px;
-    width: 280px;
-    height: 50px;
-    margin: 0 auto;
-  }
-  .ema {
-    font-size: 0.7em;
-  }
-  .sub {
-    width: 50%;
-    height: 40px;
-    margin: 4px 2px 4px 0px;
-    font-size: 0.7em;
-    font-weight: 500;
-  }
-  footer {
-    background-color: #470165;
-    color: #fff;
-    padding: 28px;
-  }
-  .footn {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap:30px 97.4px;
-  }
-   .footn div:nth-child(5){
-    grid-row: 3/3;
-   }
-   .footn div:nth-child(4){
-    grid-row: 2/3;
-   }
-  .ftn p {
-    margin-bottom: 20px;
-  }
-  .ln {
-    margin: 10px 0px 0px 0px;
-    border: 1px solid #bcbcbc;
-    width: -20px;
-    bottom: 90px;
-    left: -10px;
-  }
-  .cpyrt {
-    max-width: 100%;
-    font-size: 0.88em;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    /* align-items: center;
-  }
-  .cpyrt div:nth-child(1){
-    order: 2;
-  }
-  .cpyrt div:nth-child(2){
-    order: 1;
-  }
-  .cpyrt .icn{
-    padding: 26.09px 0px;
-  }
- 
-  .footn .ftn .comp {
-    order: 0;
-  }
-  .footn .ftn .bus {
-    order: 1;
-  }
-  .footn .ftn .exc {
-    order: 3
-  }
-  .footn .ftn .blc {
-    order: 2;
-  }
-  .footn .ftn .rsc {
-    order: 4;
-  } */
-} */
