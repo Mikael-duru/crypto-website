@@ -595,7 +595,77 @@ header, .marketPrice {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 8px;
+}
+
+.download__btn {
+    background: #D7C2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: .6rem;
+    padding-right: .8rem;
+    padding-bottom: .6rem;
+    padding-left: .5rem;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    color: #1B004E;
+    ;
+    cursor: pointer;
+}
+
+.download__btn--active {
+    padding-top: .6rem;
+    padding-right: .9rem;
+    padding-bottom: .6rem;
+    padding-left: .5rem;
+}
+
+.download__app-store-icon,
+.download__play-store-icon {
+    font-size: 30px;
+    color: #000;
+}
+
+.download__btn-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: .6rem;
+}
+
+.download__btn-text span {
+    font-size: .9rem;
+}
+
+@media screen and (min-width: 375px) {
+    .download__btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }    
+
+    .download__btn {
+        padding-top: .7rem;
+        padding-right: 1.3rem;
+        padding-bottom: .7rem;
+        padding-left: .7rem;
+    }
+
+
+    .download__btn-text {
+        font-size: .65rem;
+    }
+
+    .download__btn-text span {
+        font-size: 1.06rem;
+    }
 }
 
 
