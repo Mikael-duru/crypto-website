@@ -54,6 +54,8 @@ header, .marketPrice {
 @media screen and (min-width: 375px) {
     .wrapper {
         max-width: 375px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
@@ -162,10 +164,9 @@ header, .marketPrice {
 
     #showMenu:checked ~ #closeMenu {
         display: block;
-        /* transition: all 1s linear; */
     }
 
-    .hero__illustration, .wrapper__ribbon, .scrool, .subscribe__ribbon, svg {
+    .hero__illustration, .wrapper__ribbon, .scrool, .subscribe__ribbon, svg, .app-illustration3 {
         display: none;
     }
 }
@@ -249,16 +250,18 @@ header, .marketPrice {
     padding: 0.4375rem 0.875rem;
     background: #EB5757;
     border-radius: 3.125rem;
+    border: 2px solid #EB5757;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 0.875rem;
     line-height: 121%;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .hero__btn:hover {
-    border: 2px solid #EB5757;
     background-color: transparent;
 }
 
@@ -445,25 +448,22 @@ header, .marketPrice {
 .download__illustration {
     position: relative;
     max-width: 50%;
-    /* width: 98.33px; */
+    min-width: 98.35px;
     padding-bottom: 29.52px;
     margin-left: auto;
     margin-right: auto;
+    transition: all .5s linear;
+}
+
+.download__illustration:hover {
+    transform: translate3d(2.7rem, 0, 1rem);
 }
 
 .app-illustration {
     position: relative;
     top: 0;
-    left: 40px;
+    left: 48px;
     z-index: 1;
-}
-
-@media screen and (min-width: 375px) {
-    .app-illustration {
-        position: relative;
-        top: 0;
-        left: 45px;
-    }
 }
 
 @media screen and (min-width: 425px) {
@@ -501,7 +501,7 @@ header, .marketPrice {
 .app-illustration2 {
     position: absolute;
     top: 0;
-    left: -38px;
+    left: -40px;
     z-index: 2;
 }
 
@@ -509,18 +509,9 @@ header, .marketPrice {
     .app-illustration2 {
         position: absolute;
         top: 0;
-        left: -47px;
+        left: -45px;
     }
 }
-
-@media screen and (min-width: 425px) {
-    .app-illustration2 {
-        position: absolute;
-        top: 0;
-        left: -54px;
-    }
-}
-
 
 @media screen and (min-width: 768px) {
     .app-illustration2 {
@@ -595,40 +586,40 @@ header, .marketPrice {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 20px;
 }
 
 .download__btn {
+    width: 100.72px;
+    height: 35px;
     background: #D7C2FF;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 10px;
-    padding-top: .6rem;
-    padding-right: .8rem;
-    padding-bottom: .6rem;
-    padding-left: .5rem;
+    gap: 5px;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
     border: none;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 1.0625rem;
+    border-radius: 6px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
     color: #1B004E;
-    ;
     cursor: pointer;
 }
 
+.download__btn:hover {
+    transform: scale(1.1);
+}
+
 .download__btn--active {
-    padding-top: .6rem;
-    padding-right: .9rem;
-    padding-bottom: .6rem;
-    padding-left: .5rem;
+    width: 100.71px;
+    gap: 3px;
 }
 
 .download__app-store-icon,
 .download__play-store-icon {
-    font-size: 30px;
-    color: #000;
+    padding-left: .4rem;
 }
 
 .download__btn-text {
@@ -636,35 +627,79 @@ header, .marketPrice {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-size: .6rem;
+    font-size: .88rem;
+    padding-right: .4rem;
+    padding-top: .5rem;
 }
 
-.download__btn-text span {
-    font-size: .9rem;
+.download__btn-text small {
+    font-size: .545rem;
+    line-height: 0.2;
 }
 
-@media screen and (min-width: 375px) {
+.download__btn-text--active {
+    padding-right: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+.download__btn-text--active small {
+    font-size: .25rem;
+    line-height: .3;
+    margin-top: -.4rem;
+}
+
+.download__btn-text--active p {
+    font-weight: 400;
+    font-size: .88rem;
+    letter-spacing: -0.1rem;
+}
+
+@media screen and (min-width: 768px) {
     .download__btns {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }    
+        gap: 30px;
+    }
 
     .download__btn {
-        padding-top: .7rem;
-        padding-right: 1.3rem;
-        padding-bottom: .7rem;
-        padding-left: .7rem;
+        width: 159.11px;
+        height: 55.29px;
+        gap: 8px;
     }
 
+    .download__btn--active {
+        width: 168.92px;
+        height: 55.26px;
+        gap: 6px;
+    }
+
+    .download__app-store-icon,
+    .download__play-store-icon {
+        font-size: 40px;
+    }
 
     .download__btn-text {
-        font-size: .65rem;
+        font-size: 1.45rem;
+        padding-right: .4rem;
+        padding-top: .5rem;
     }
-
-    .download__btn-text span {
-        font-size: 1.06rem;
+    
+    .download__btn-text small {
+        font-size: .9rem;
+        line-height: 0.2;
+    }
+    
+    .download__btn-text--active {
+        padding-right: 0px;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .download__btn-text--active small {
+        font-size: .42rem;
+        line-height: .3;
+        margin-top: -.4rem;
+    }
+    
+    .download__btn-text--active p {
+        font-size: 1.43rem;
     }
 }
 
@@ -697,6 +732,11 @@ header, .marketPrice {
     box-shadow: 0px 4px 8px rgba(203, 203, 203, 0.25);
     border-radius: 10px;
     margin-top: 36.53px;
+    transition: all 1s ease;
+}
+
+.news__card:hover {
+    transform: translateY(-20px);
 }
 
 .news__card_content {
@@ -853,14 +893,6 @@ footer {
     .grid__items:nth-child(4){
     grid-row: 2/3;
     }
-
-    /* .app-illustration2 {
-        display: none;
-    }
-
-    .app-illustration1 {
-        display: initial;
-    } */
 }
 
 .grid__items:not(:last-of-type) {
@@ -912,17 +944,19 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    transition: all .5s linear;
+    }
 
-  .social-icons i.active {
+.social-icons i.active {
     background-color: #eb5757;
     color: #fff;
-  }
+}
 
-  .social-icons i:not(.active):hover {
-    color: #eb5757;
-    border: 1px solid #eb5757;
-  }
+.social-icons i:not(.active):hover {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    transform: translateY(-5px);
+}
 
 .credit {
     padding-top: 1.627rem;
@@ -941,7 +975,7 @@ footer {
 
 
 @media screen and (min-width: 768px) {
-   .navbar {
+    .navbar {
     padding-top: 1.938rem;
     }
 
@@ -1054,7 +1088,7 @@ footer {
         line-height: 24px;
     }
 
-   .grid {
+    .grid {
     padding-top: 81.91px;
     padding-bottom: 109.09px;
     row-gap: 30px;
@@ -1080,14 +1114,6 @@ footer {
         line-height: 24px;
     }
 
-    /* .app-illustration {
-        display: none;
-    }
-
-    .app-illustration2 {
-        display: initial;
-    } */
-
     .credit {
         display: flex;
         flex-direction: row-reverse;
@@ -1103,106 +1129,12 @@ footer {
 
 }
 
-@media screen and (min-width: 901px) {
-    /* .wrapper {
-        max-width: 901px;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    } */
-
-    
-    
-    
-
-    /* .hero {
-        padding-top: 6rem;
-    }
-
-    .hero__title {
-        font-size: 3rem;
-    } */
-
-    /* .marketPrice {
-        padding-bottom: 6.93rem;
-    }
-
-    .marketPrice__title {
-        padding-top: 5.93rem;
-        margin-bottom: 3.75rem;
-    }
-
-    .marketPrice__data:first-child {
-        text-align: left;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 100%;
-        color: #828282;
-        padding-right: 1rem;
-    }
-
-    .star-icon {
-        padding-right: 12px;
-    }
-
-    .marketPrice__data:nth-child(2) {
-        width: 128px;
-        padding-right: 56.63px;
-    } */
-/*
-    .marketPrice__head:nth-child(3),
-    .marketPrice__data:nth-child(3) {
-        text-align: center;
-        padding-right: 45px;
-    }
-
-    .marketPrice__data:nth-child(4),
-    .marketPrice__data:nth-child(5) {
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 123%;
-    }
-
-    .marketPrice__head:nth-child(4){
-        text-align: left;
-    }
-
-    .marketPrice__data:nth-child(4) {
-        width: 49.53px;
-        padding-right: 64.69px;
-    }
-    
-    .marketPrice__head:nth-child(5) {
-        text-align: left;
-        padding-left: .5rem;
-    } */
-/* 
-    .marketPrice__data:nth-child(5){
-        width: 58px;
-        padding-right: 45px;
-    }
-
-    .marketPrice__head:nth-child(6) .flex {
-        justify-content: center;
-    }
-
-    .marketPrice__data:nth-child(6) {
-        text-align: center;
-    }
-
-    .marketPrice__data:nth-child(7) {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    .marketPrice__dots {
-        padding-left: 20px; */
-    }
-
-
 @media screen and (min-width: 1024px) {
     header {
         position: relative;
         height: 700px;
+        /* overflow: hidden; */
+        width: 100%;
     }
 
     .wrapper {
@@ -1212,6 +1144,7 @@ footer {
     }
 
     .wavy-bg {
+        position: relative;
         width: 100%;
         height: 100%;
         background: linear-gradient(227.07deg, #4E0062 0.43%, #220076 99.56%);
@@ -1221,7 +1154,7 @@ footer {
 
     svg {
         position: absolute;
-        bottom: 0;
+        bottom: -170px;
         left: 0;
     }
 
@@ -1243,10 +1176,6 @@ footer {
         flex: 1;
         display: flex;
         justify-content: space-between;
-    }
-
-    header {
-        width: 100%;
     }
 
     .hero {
@@ -1306,7 +1235,6 @@ footer {
         bottom: 1.588rem;
         left: 50%;
         padding-top: 3.21rem;
-        /* padding-bottom: 0; */
     }
 
     .marketPrice {
@@ -1317,12 +1245,6 @@ footer {
         padding-top: 5.93rem;
         margin-bottom: 3.75rem;
     }
-
-    /* @media screen and (max-width: 1280px) {
-        .sm-hide--active {
-            display: none;
-        }
-    } */
 
     .marketPrice__data:first-child {
         text-align: left;
@@ -1403,7 +1325,6 @@ footer {
     .download__flex_main {
         display: flex;
         justify-content: space-between;
-        /* align-items: center; */
         width: 100%;
         gap: 124.53px;
     }
@@ -1439,8 +1360,6 @@ footer {
     .download__btns {
         position: absolute;
         top: 460.97px;
-        justify-content: flex-start;
-        /* margin-top: -150px; */
     }
 
     .news__flex {
@@ -1464,77 +1383,12 @@ footer {
     }
 
     .grid {
-        /* grid-template-columns: 120px 100px repeat(2, 1fr) 110px; */
         grid-template-columns: 114.14px 102px 156.07px 129.61px 102px;
         column-gap: 95px;
         row-gap: 0px;
         }
 
 
-}
-
-@media screen and (min-width: 1130px) {
-/* 
-    .logo {
-        margin-right: 7rem;
-    }
-
-    .nav {
-        flex: 1;
-        
-    }
-
-    .nav__flex {
-        flex: 1;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    header {
-        width: 100%;
-    }
-
-    .hero {
-        width: 100%;
-        height: 100%;
-        padding-top: 5rem;
-    }
-
-    .hero__flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .hero__content {
-        flex: 1;
-        text-align: left;
-        width: 60%;
-    }
-
-    .hero__title {
-        max-width: 20ch;
-    }
-
-    .hero__desc {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .hero__illustration {
-        flex-grow: 1;
-        flex-shrink: 0;
-        padding-right: 3.06rem;
-        margin-top: -70px;
-    }
-
-    .hero__image {
-        z-index: 10;
-    }
-
-    .scrool {
-        padding-top: 0rem;
-    } */
 }
 
 @media screen and (min-width: 1440px) {
