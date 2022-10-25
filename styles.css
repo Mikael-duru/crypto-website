@@ -455,10 +455,6 @@ header, .marketPrice {
     transition: all .5s linear;
 }
 
-.download__illustration:hover {
-    transform: translate3d(2.7rem, 0, 1rem);
-}
-
 .app-illustration {
     position: relative;
     top: 0;
@@ -496,6 +492,11 @@ header, .marketPrice {
         top: 0;
         left: 92px;
     }
+}
+
+
+.download__illustration:hover .app-illustration {
+    transform: translateX(10px);
 }
 
 .app-illustration2 {
