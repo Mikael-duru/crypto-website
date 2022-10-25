@@ -1,5 +1,5 @@
 # CRAPPO
-This is a solution to a DevCareer Cohort 2 task, coded by team phamtom.
+This is a solution to a DevCareer Cohort 2 task, coded by team phantom.
 
 ## Built with
   - Semantic HTML5 markup
