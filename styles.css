@@ -34,7 +34,6 @@ a {
 
 header, .marketPrice {
     background: #1B004E;
-    overflow-x: hidden;
 }
 
 .wrapper {
@@ -460,6 +459,11 @@ header, .marketPrice {
     top: 0;
     left: 48px;
     z-index: 1;
+    transition: all .3s ease;
+}
+
+.download__illustration:hover .app-illustration {
+    transform: translateX(20px);
 }
 
 @media screen and (min-width: 425px) {
@@ -494,16 +498,16 @@ header, .marketPrice {
     }
 }
 
-
-.download__illustration:hover .app-illustration {
-    transform: translateX(10px);
-}
-
 .app-illustration2 {
     position: absolute;
     top: 0;
     left: -40px;
     z-index: 2;
+    transition: all .3s ease;
+}
+
+.download__illustration:hover .app-illustration2 {
+    transform: translateX(-20px);
 }
 
 @media screen and (min-width: 375px) {
@@ -542,6 +546,11 @@ header, .marketPrice {
     position: absolute;
     top: -10px;
     left: 78px;
+    transition: all .3s ease;
+}
+
+.download__illustration:hover .app-illustration3 {
+    transform: translateX(20px);
 }
 
 @media screen and (min-width: 375px) {
@@ -607,6 +616,7 @@ header, .marketPrice {
     font-size: 24px;
     color: #1B004E;
     cursor: pointer;
+    transition: all .3s ease;
 }
 
 .download__btn:hover {
@@ -734,10 +744,11 @@ header, .marketPrice {
     border-radius: 10px;
     margin-top: 36.53px;
     transition: all 1s ease;
+    transition: all .3s ease;
 }
 
 .news__card:hover {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
 }
 
 .news__card_content {
@@ -866,11 +877,11 @@ header, .marketPrice {
     border: none;
     outline: none;
     cursor: pointer;
-    transform: scale(1);
+    transition: all .15s ease;
 }
 
 .subscribe__form_btn:hover {
-    transform: scale(0.98);
+    transform: scale(0.97);
 }
 
 
@@ -945,7 +956,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .5s linear;
+    transition: all .3s ease;
     }
 
 .social-icons i.active {
@@ -1003,11 +1014,9 @@ footer {
     .hero__btn {
         width: 192px;
         padding: 0.9375rem 1.875rem;
-        border: 2px solid #EB5757;
         font-size: 0.875rem;
         line-height: 100%;
         margin-bottom: 50px;
-        z-index: 100;
     }
 
     .marketPrice__title  {
@@ -1135,7 +1144,9 @@ footer {
 @media screen and (min-width: 1024px) {
     header {
         position: relative;
-        height: 820px;
+        height: 700px;
+        width: 100%;
+        overflow: hidden;
     }
 
     .wrapper {
@@ -1152,12 +1163,10 @@ footer {
         
     }
 
-    svg {
+    .wavy-svg {
         position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 300px;
         width: 100%;
+        bottom: 0;
     }
 
     #showMenu, #openMenu, #closeMenu {
@@ -1178,10 +1187,6 @@ footer {
         flex: 1;
         display: flex;
         justify-content: space-between;
-    }
-
-    header {
-        width: 100%;
     }
 
     .hero {
@@ -1219,7 +1224,7 @@ footer {
     .hero__image {
         position: relative;
         top: 90px;
-        left: -105px;
+        left: -95px;
     }
 
     .hero__image2 {
@@ -1238,7 +1243,7 @@ footer {
     .scrool {
         display: block;
         position: absolute;
-        bottom: 7rem;
+        bottom: 1.588rem;
         left: 50%;
         padding-top: 3.21rem;
     }
@@ -1371,7 +1376,6 @@ footer {
     .news__flex {
         display: flex;
         gap: 33px;
-        
     }
 
     .subscribe__ribbon {
@@ -1392,9 +1396,7 @@ footer {
         grid-template-columns: 114.14px 102px 156.07px 129.61px 102px;
         column-gap: 95px;
         row-gap: 0px;
-        }
-
-
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1425,10 +1427,10 @@ footer {
         line-height: 90px;
     }
 
-    .hero__image-2 {
-        position: absolute;
-        left: 835px;
-        top: 270px;
+    .hero__image {
+        position: relative;
+        top: 110px;
+        left: -95px;
     }
 
     .hero__image2 {
@@ -1440,7 +1442,7 @@ footer {
     .wrapper__ribbon {
         display: block;
         position: absolute;
-        top: 138.21px;
+        top: 122.21px;
         left: -3px;
     }
 
