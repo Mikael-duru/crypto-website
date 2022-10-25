@@ -606,7 +606,7 @@ header, .marketPrice {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 5px;
+    gap: 4.5px;
     padding-top: .7rem;
     padding-bottom: .7rem;
     border: none;
@@ -638,13 +638,13 @@ header, .marketPrice {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-size: .88rem;
+    font-size: .86rem;
     padding-right: .4rem;
     padding-top: .5rem;
 }
 
 .download__btn-text small {
-    font-size: .545rem;
+    font-size: .543rem;
     line-height: 0.2;
 }
 
