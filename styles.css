@@ -638,7 +638,7 @@ header, .marketPrice {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-size: .86rem;
+    font-size: .88rem;
     padding-right: .4rem;
     padding-top: .5rem;
 }
@@ -942,6 +942,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 16.32px;
 }
 
 .social-icons i {
@@ -952,7 +953,6 @@ footer {
     width: 32px;
     height: 32px;
     font-size: 20px;
-    margin-right: 16.32px;
     display: flex;
     justify-content: center;
     align-items: center;
